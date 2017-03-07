@@ -24,7 +24,7 @@
             android:layout_centerVertical="true"
             android:fontFamily="serif"
             android:textSize="40sp"
-            android:textColor="#800000"/>
+            android:textColor="#eff7eded"/>
     </RelativeLayout>
 
 </LinearLayout>

@@ -49,7 +49,7 @@ public class CustomAdapter extends BaseAdapter {
         ImageView im;
         TextView name;
     }
-
+ 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
 

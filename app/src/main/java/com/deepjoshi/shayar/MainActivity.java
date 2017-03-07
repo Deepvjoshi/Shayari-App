@@ -81,6 +81,16 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
+
+
+
+
+
+
+
+
+
+
             if (dialog.isShowing()) {
                 dialog.dismiss();
             }
