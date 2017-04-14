@@ -15,6 +15,7 @@
         android:paddingTop="30dp"
         android:paddingBottom="30dp"
         android:paddingLeft="30dp"
+        android:layoutAnimation="@anim/anim"
         android:id="@+id/quotelayout">
         <TextView
             android:id="@+id/quotetxt"

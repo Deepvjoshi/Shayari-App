@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.github.ivbaranov.mli.MaterialLetterIcon;
+
 import java.util.ArrayList;
 
 /**
@@ -40,6 +42,8 @@ public class CustomlistAdapter  extends BaseAdapter{
 
     static class ViewListHolder{
         TextView Listquotes;
+        MaterialLetterIcon icon;
+
     }
 
     @Override
@@ -49,6 +53,7 @@ public class CustomlistAdapter  extends BaseAdapter{
 
             convertView = LayoutInflater.from(listcontext).inflate(R.layout.single_row,parent,false);
             listholder.Listquotes = (TextView)convertView.findViewById(R.id.single_text);
+            listholder.icon = (MaterialLetterIcon) convertView.findViewById(R.id.rge);
 
             convertView.setTag(listholder);
         }else
@@ -56,6 +61,11 @@ public class CustomlistAdapter  extends BaseAdapter{
         {
             listholder = (ViewListHolder)convertView.getTag();
         }
+
+        String caseName = qlist.get(position).getQuotes();
+        String firstChar = String.valueOf(caseName.charAt(0));
+        listholder.icon.setLetter(firstChar);
+
         listholder.Listquotes.setText(qlist.get(position).getQuotes());
 
         listholder.Listquotes.setOnClickListener(new View.OnClickListener() {

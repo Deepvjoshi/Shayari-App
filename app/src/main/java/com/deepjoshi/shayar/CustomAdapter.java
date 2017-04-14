@@ -68,6 +68,16 @@ public class CustomAdapter extends BaseAdapter {
     }else
 
     {
+
+
+
+
+
+
+
+
+
+
         holder = (ViewHolder) convertView.getTag();
     }
         holder.name.setText(posts.get(position).getName());
